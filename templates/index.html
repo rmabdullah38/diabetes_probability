@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Probability Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Probability Calculator</h1>
+        <form method="post" class="form-style">
+            <div class="form-group">
+                <label for="obesity">Are you obese?</label>
+                <div class="radio-buttons">
+                    <input type="radio" id="obesity_yes" name="obesity" value="1"> <label for="obesity_yes">Yes</label>
+                    <input type="radio" id="obesity_no" name="obesity" value="0" checked> <label for="obesity_no">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="age_over_45">Are you over 45 years old?</label>
+                <div class="radio-buttons">
+                    <input type="radio" id="age_over_45_yes" name="age_over_45" value="1"> <label for="age_over_45_yes">Yes</label>
+                    <input type="radio" id="age_over_45_no" name="age_over_45" value="0" checked> <label for="age_over_45_no">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="family_history">Do you have a family history of diabetes?</label>
+                <div class="radio-buttons">
+                    <input type="radio" id="family_history_yes" name="family_history" value="1"> <label for="family_history_yes">Yes</label>
+                    <input type="radio" id="family_history_no" name="family_history" value="0" checked> <label for="family_history_no">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="physical_inactivity">Do you have a physically inactive lifestyle?</label>
+                <div class="radio-buttons">
+                    <input type="radio" id="physical_inactivity_yes" name="physical_inactivity" value="1"> <label for="physical_inactivity_yes">Yes</label>
+                    <input type="radio" id="physical_inactivity_no" name="physical_inactivity" value="0" checked> <label for="physical_inactivity_no">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="unhealthy_diet">Do you have an unhealthy diet?</label>
+                <div class="radio-buttons">
+                    <input type="radio" id="unhealthy_diet_yes" name="unhealthy_diet" value="1"> <label for="unhealthy_diet_yes">Yes</label>
+                    <input type="radio" id="unhealthy_diet_no" name="unhealthy_diet" value="0" checked> <label for="unhealthy_diet_no">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ethnicity_risk">Are you from a high-risk ethnicity?</label>
+                <div class="radio-buttons">
+                    <input type="radio" id="ethnicity_risk_yes" name="ethnicity_risk" value="1"> <label for="ethnicity_risk_yes">Yes</label>
+                    <input type="radio" id="ethnicity_risk_no" name="ethnicity_risk" value="0" checked> <label for="ethnicity_risk_no">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="history_gestational_diabetes">Do you have a history of gestational diabetes?</label>
+                <div class="radio-buttons">
+                    <input type="radio" id="history_gestational_diabetes_yes" name="history_gestational_diabetes" value="1"> <label for="history_gestational_diabetes_yes">Yes</label>
+                    <input type="radio" id="history_gestational_diabetes_no" name="history_gestational_diabetes" value="0" checked> <label for="history_gestational_diabetes_no">No</label>
+                </div>
+            </div>
+
+            <!-- Submit button should be here -->
+            <button type="submit" class="submit-button">Calculate Probability</button>
+        </form>
+    </div>
+</body>
+</html>

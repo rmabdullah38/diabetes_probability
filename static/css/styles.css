@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/static/fruit.jpeg'); /* Path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Fixed background while scrolling */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-style {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.radio-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.result-container {
+    text-align: center;
+}
+
+.calculate-again {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.calculate-again:hover {
+    background-color: #007ba7;
+}
